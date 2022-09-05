@@ -1,1 +1,6 @@
-E-COMMERCE
+            E-COMMERCE
+ELEMENTI NECESSARI PER UN E COMMERCE:
+
+-PRODOTTI (tipologia prodotti, nome, prezzo ecc..)
+-UTENTI(nome, cognome, id utente,)
+?trait se l'utente  è iscritto
