@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 
 <?php 
-class Procudcts{
-    protected $name;
+class Products{
+    protected $ProductName;
     protected $price;
-    protected $type; 
 
-    public function __construct($_name, $_price, $_type){
-        $this->name = $_name;
+    public function __construct($_name, $_price){
+        $this->ProductName = $_name;
         $this->price = $_price;
-        $this->type = $_type;
+    }
+
+    // * name
+    public function setProdictname($_name){
+        $this->ProductName = $_name;
+    }
+
+    public function getProdictname(){
+        return $this->ProductName;
+    }
+    // * price
+    public function setPrice($_price){
+        $this->price = $_price;
+    }
+
+    public function getPrice(){
+        return $this->name;
     }
 }
 ?>
-
-
-</body>
-</html>
