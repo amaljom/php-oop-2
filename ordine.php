@@ -3,7 +3,7 @@
 require_once __DIR__ . '/ProductType.php';
 require_once __DIR__ . '/Credito.php';
 
-echo $new->getName().' '. $new->getSurname();
+echo $new->getName().' '. $new->getSurname().' ';
 
      $subscription=$new->getSubscription();
      
@@ -12,6 +12,14 @@ echo $new->getName().' '. $new->getSurname();
      }
      else{
         echo $prodottCompleto->getPrice();
+     }
+
+     $cardExpiry=$cardOne->getExpiration();
+     if ($cardExpiry<date("Y")) {
+        echo "carta scaduta";
+     }
+     else{
+        echo "possibile effettuare il pagamento";
      }
 
      
