@@ -25,7 +25,7 @@ class User{
         $this->surname = $_surname;
     }
 
-    public function getAddress(){
+    public function getSurname(){
         return $this->surname;
     }
     // * address
@@ -33,7 +33,7 @@ class User{
         $this->address = $_address;
     }
 
-    public function getSurname(){
+    public function getAddress(){
         return $this->address;
     }
     // * sub
@@ -45,6 +45,5 @@ class User{
         return $this->SubscriptionStatus;
     }
 }
-$new= new User("ciao", "ciao", "via", true);
-var_dump($new);
+$new= new User("luca", "bho", "via", true);
 ?>

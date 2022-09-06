@@ -12,12 +12,12 @@ class Carta{
         $this->expiration=$_expiration;
     }
     // * numero
-    public function setNumber($_name){
-        $this->name = $_name;
+    public function setNumber($_number){
+        $this->number = $_number;
     }
 
-    public function getName(){
-        return $this->name;
+    public function Getnumber(){
+        return $this->number;
     }
 
     // * cvv
@@ -38,5 +38,5 @@ class Carta{
         return $this->expiration;
     }
 }
-$cardOne= new carta(1215485421, 782, 20 / 11 / 2024);
-var_dump($cardOne);
+$cardOne= new carta(1215485421, 782, 2024);
+var_dump($cardOne, $new);

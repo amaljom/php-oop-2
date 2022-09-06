@@ -23,7 +23,7 @@ class Products{
     }
 
     public function getPrice(){
-        return $this->name;
+        return $this->price;
     }
 }
 ?>

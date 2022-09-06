@@ -2,8 +2,8 @@
     require_once __DIR__ .'/Product.php';
      
     class ProductType extends Products{
-        private $type;
-        private $species;
+        protected $type;
+        protected $species;
 
         public function __construct($_name, $_price, $_type,  $_species){
             parent::__construct($_name, $_price);
@@ -14,4 +14,3 @@
 
     $prodottCompleto= new ProductType("crocchette", 12, "cibo", "gatti");
     var_dump($prodottCompleto);
-    ?>
